@@ -81,7 +81,7 @@ class _ManyMarkersPageState extends State<ManyMarkersPage> {
               ),
               children: [
                 TileLayer(
-                  urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                  urlTemplate: 'https://{s}.maps.2gis.com/tiles?x={x}&y={y}&z={z}&v=1',
                   userAgentPackageName: 'dev.fleaflet.flutter_map.example',
                 ),
                 MarkerLayer(

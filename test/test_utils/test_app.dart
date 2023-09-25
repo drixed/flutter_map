@@ -43,7 +43,7 @@ class TestApp extends StatelessWidget {
               ),
               children: [
                 TileLayer(
-                  urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                  urlTemplate: 'https://{s}.maps.2gis.com/tiles?x={x}&y={y}&z={z}&v=1',
                   tileProvider: TestTileProvider(),
                 ),
                 if (polylines.isNotEmpty) PolylineLayer(polylines: polylines),

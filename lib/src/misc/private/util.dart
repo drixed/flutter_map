@@ -4,7 +4,7 @@ var _templateRe = RegExp(r'\{ *([\w_-]+) *\}');
 
 /// Replaces the templating placeholders with the provided data map.
 ///
-/// Example input: https://tile.openstreetmap.org/{z}/{x}/{y}.png
+/// Example input: https://{s}.maps.2gis.com/tiles?x={x}&y={y}&z={z}&v=1
 ///
 /// Throws an [Exception] if any placeholder remains unresolved.
 String template(String str, Map<String, String> data) {

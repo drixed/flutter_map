@@ -115,7 +115,7 @@ class MarkerPageState extends State<MarkerPage> {
                 children: [
                   TileLayer(
                     urlTemplate:
-                        'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                        'https://{s}.maps.2gis.com/tiles?x={x}&y={y}&z={z}&v=1',
                     userAgentPackageName: 'dev.fleaflet.flutter_map.example',
                   ),
                   MarkerLayer(
